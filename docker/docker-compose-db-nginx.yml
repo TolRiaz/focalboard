@@ -9,10 +9,10 @@ services:
     depends_on:
       - focalboard-db
     expose:
-      - 8000
+      - 30080
     environment:
       - VIRTUAL_HOST=localhost
-      - VIRTUAL_PORT=8000
+      - VIRTUAL_PORT=30080
       - VIRTUAL_PROTO=http
     volumes:
       - "./config.json:/opt/focalboard/config.json"
